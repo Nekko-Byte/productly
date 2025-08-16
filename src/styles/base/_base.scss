@@ -19,7 +19,8 @@ a {
 a,
 button,
 input,
-textarea {
+textarea,
+svg * {
   transition-duration: var(--transition-duration);
   cursor: pointer;
 }

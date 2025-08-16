@@ -1,0 +1,42 @@
+@use "../helpers/" as *;
+
+.hero {
+  padding: 30px 0 0 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__body {
+    max-width: 480px;
+  }
+
+  &__title {
+    margin: 0 0 30px 0;
+  }
+
+  &__description {
+    @include font(18px, 28px, 400);
+
+    margin: 0 0 45px 0;
+    font-family: var(--font-family-accent);
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    column-gap: 44px;
+  }
+
+  &__link {
+    font-family: var(--font-family-accent);
+    font-weight: 600;
+
+    &.button {
+      font-family: inherit;
+      font-weight: 700;
+    }
+  }
+}

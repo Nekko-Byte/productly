@@ -1,0 +1,32 @@
+@use "../helpers/" as *;
+
+.link {
+  display: flex;
+  align-items: center;
+
+  &__accent {
+    color: var(--color-accent);
+    text-decoration: underline;
+
+    @include hover {
+      color: var(--color-secondary);
+
+      &::before {
+        background-image: url("~@icons/play_hover.svg");
+      }
+    }
+
+    &::before {
+      @include square(20px);
+
+      content: "";
+      display: inline-block;
+      margin: 0 10px 0 0;
+      background-image: url("~@icons/play.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition-duration: var(--transition-duration);
+    }
+  }
+}
