@@ -1,0 +1,17 @@
+@use "../helpers/" as *;
+
+.menu {
+  color: var(--color-primary-dark);
+
+  &__list {
+    display: flex;
+    align-items: center;
+    column-gap: 17px;
+  }
+
+  &__link {
+    @include hover {
+      color: var(--color-accent);
+    }
+  }
+}

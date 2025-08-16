@@ -1,0 +1,26 @@
+@use "../helpers/" as *;
+
+.button {
+  padding: 11px 20px;
+  font-weight: 600;
+  color: var(--color-white);
+  border-radius: var(--border-radius-sm);
+
+  &__accent {
+    border: var(--border-accent);
+    background-color: var(--color-accent);
+
+    @include hover {
+      background-color: var(--color-hover);
+    }
+  }
+
+  &__bordered {
+    color: var(--color-blue-dark);
+    border: var(--border-default);
+
+    @include hover {
+      background-color: var(--color-blue-light);
+    }
+  }
+}

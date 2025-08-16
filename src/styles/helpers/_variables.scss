@@ -8,7 +8,9 @@
   --color-violet: #7752BE;
   --color-yellow: #FAB005;
   --color-red: #F03E3D;
+  --color-blue-light: #BCD0E5;
   --color-blue: #4DADF7;
+  --color-blue-dark: #173A56;
 
   // =============================================
   // 2. Семантические цвета (основные/второстепенные)
@@ -16,7 +18,7 @@
   --color-primary: #544837;
   --color-primary-dark: #2F281E;
   --color-primary-light: #FFB2A0;
-  --color-secondary: #FF7B5B;
+  --color-secondary: #FF7549;
   --color-secondary-light: #FFC6B2;
   --color-accent: #FF9900;
 
@@ -27,7 +29,7 @@
   --color-link-accent: var(--color-accent);
   --color-title: var(--color-primary-dark);
   --color-text: var(--color-primary);
-  --color-hover: var(--color-accent);
+  --color-hover: var(--color-secondary);
 
   // =============================================
   // 4. Размеры и отступы
@@ -40,8 +42,9 @@
   // =============================================
   // 5. Границы и скругления
   // =============================================
+  --border-accent: 1px solid var(var(--color-accent));
   --border-default: 1px solid #D7D7D7;
-  --border-additional: 1px solid #BCD0E5;
+  --border-additional: 1px solid var(--color-blue-light);
   --border-radius-sm: 4px;
   --border-radius-md: 19px;
   --border-radius-lg: 90px;
