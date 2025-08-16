@@ -20,6 +20,7 @@
 @use "./components/tabs";
 @use "./components/card";
 @use "./components/person";
+@use "./components/icon";
 
 // =============================================
 // Layout
@@ -29,3 +30,4 @@
 @use "./layout/tools";
 @use "./layout/strategies";
 @use "./layout/about";
+@use "./layout/contact-us";

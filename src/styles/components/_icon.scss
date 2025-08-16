@@ -1,0 +1,41 @@
+@use "../helpers/" as *;
+
+.icon {
+  @include square(25px, true);
+
+  position: relative;
+  display: inline-block;
+  background-color: var(--color-white);
+
+  &--phone {
+    &::before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 50%;
+      translate: -50% -50%;
+      width: 11px;
+      height: 11px;
+      background-image: url("~@icons/phone.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &--mail {
+    &::before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 50%;
+      translate: -50% -50%;
+      width: 11px;
+      height: 11px;
+      background-image: url("~@icons/mail.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
