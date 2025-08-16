@@ -1,0 +1,13 @@
+@use "../helpers/" as *;
+
+.about {
+  padding: 96px 0 100px;
+
+  &__title {
+    margin: 0 0 14px 0;
+  }
+
+  &__description {
+    margin: 0 0 45px 0;
+  }
+}

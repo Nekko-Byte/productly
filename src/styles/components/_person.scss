@@ -1,0 +1,41 @@
+@use "../helpers/" as *;
+
+.person {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 65px;
+  }
+
+  &__card {
+    position: relative;
+    padding: 35px 88px 35px 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  &__name {
+    margin: 0;
+  }
+
+  &__job {
+    margin: 0;
+  }
+
+  &__link {
+    color: #1943ef;
+    text-decoration: underline;
+  }
+
+  &__avatar {
+    @include square(98px, true);
+
+    position: absolute;
+    content: "";
+    right: -45px;
+    top: 50%;
+    translate: 0 -50%;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.15);
+  }
+}

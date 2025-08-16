@@ -17,3 +17,7 @@ h3, .h3 {
 h4, .h4 {
   @include font(22px, 22px, 600)
 }
+
+h5, .h5 {
+  @include font(16px, 26px, 700);
+}

@@ -19,6 +19,7 @@
 @use "./components/tool";
 @use "./components/tabs";
 @use "./components/card";
+@use "./components/person";
 
 // =============================================
 // Layout
@@ -27,3 +28,4 @@
 @use "./layout/hero";
 @use "./layout/tools";
 @use "./layout/strategies";
+@use "./layout/about";
