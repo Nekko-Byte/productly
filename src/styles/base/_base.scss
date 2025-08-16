@@ -33,7 +33,7 @@ button {
 }
 
 .container {
-  max-width: calc(var(--container-width) + var(--container-padding-x) *2);
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
   padding: 0 var(--container-padding-x);
   margin: 0 auto;
 }

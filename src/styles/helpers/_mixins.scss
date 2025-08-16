@@ -88,7 +88,7 @@
 // =============================================
 // 5. Шрифты
 // =============================================
-@mixin font ($size, $height: $size, $weight: bold, $style: normal) {
+@mixin font($size, $height: $size, $weight: bold, $style: normal) {
     font-size: $size;
     font-style: $style;
     font-weight: $weight;

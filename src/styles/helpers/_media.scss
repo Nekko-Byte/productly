@@ -14,8 +14,9 @@ $breakpoints: (
 /// Для ширины больше указанного брейкпоинта
 /// @param {String} $breakpoint - Ключ из $breakpoints
 @mixin media-up($breakpoint) {
-  @if map-has-key($breakpoints, $breakpoint) {
-    $value: map-get($breakpoints, $breakpoint);
+  @if map.has-key($breakpoints, $breakpoint) {
+    $value: map.get($breakpoints, $breakpoint);
+
     @media (min-width: $value) {
       @content;
     }
@@ -27,8 +28,9 @@ $breakpoints: (
 /// Для ширины меньше указанного брейкпоинта
 /// @param {String} $breakpoint - Ключ из $breakpoints
 @mixin media-down($breakpoint) {
-  @if map-has-key($breakpoints, $breakpoint) {
-    $value: map-get($breakpoints, $breakpoint) - 0.02px;
+  @if map.has-key($breakpoints, $breakpoint) {
+    $value: map.get($breakpoints, $breakpoint) - 0.02px;
+
     @media (max-width: $value) {
       @content;
     }
@@ -108,13 +110,6 @@ $breakpoints: (
 
 @mixin landscape {
   @media (orientation: landscape) {
-    @content;
-  }
-}
-
-/// Плотность пикселей
-@mixin retina {
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     @content;
   }
 }

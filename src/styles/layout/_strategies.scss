@@ -1,7 +1,7 @@
 @use "../helpers/" as *;
 
 .strategies {
-  padding: 30px 0 0 0;
+  padding: 30px 0 0;
 
   &__content {
     &:not(.is-active) {
@@ -10,11 +10,11 @@
   }
 
   &__title {
-    margin: 0 0 14px 0;
+    margin: 0 0 14px;
   }
 
   &__subtitle {
-    margin: 0 0 24px 0;
+    margin: 0 0 24px;
   }
 
   &__list {
