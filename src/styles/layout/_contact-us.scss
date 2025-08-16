@@ -57,9 +57,14 @@
     background-color: var(--color-white);
     border: none;
     border-radius: 5px;
+    outline: none;
 
     &::placeholder {
       color: #C6C6C6;
+    }
+
+    &:focus-visible {
+      outline: 1px solid var(--color-accent);
     }
   }
 
@@ -67,12 +72,16 @@
     grid-column: 1 / -1;
     width: 100%;
     min-height: 160px;
+    padding: 10px 20px 0 20px;
     border: none;
     border-radius: 5px;
 
     &::placeholder {
-      color: darkblue !important;
-      opacity: 1 !important;
+      color: #C6C6C6;
+    }
+
+    &:focus-visible {
+      outline: 1px solid var(--color-accent);
     }
   }
 
