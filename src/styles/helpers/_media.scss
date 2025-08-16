@@ -1,0 +1,120 @@
+// =============================================
+// 1. Брейкпоинты (в rem для адаптивности)
+// =============================================
+$breakpoints: (
+  desktop: 1024px,
+  tablet: 768px,
+  mobile: 376px
+) !default;
+
+// =============================================
+// 2. Основные медиа-миксины
+// =============================================
+
+/// Для ширины больше указанного брейкпоинта
+/// @param {String} $breakpoint - Ключ из $breakpoints
+@mixin media-up($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    $value: map-get($breakpoints, $breakpoint);
+    @media (min-width: $value) {
+      @content;
+    }
+  } @else {
+    @warn "Брейкпоинт '#{$breakpoint}' не найден в $breakpoints";
+  }
+}
+
+/// Для ширины меньше указанного брейкпоинта
+/// @param {String} $breakpoint - Ключ из $breakpoints
+@mixin media-down($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    $value: map-get($breakpoints, $breakpoint) - 0.02px;
+    @media (max-width: $value) {
+      @content;
+    }
+  } @else {
+    @warn "Брейкпоинт '#{$breakpoint}' не найден в $breakpoints";
+  }
+}
+
+// =============================================
+// 3. Готовые пресеты (для удобства)
+// =============================================
+
+@mixin desktop {
+  @include media-up(desktop) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @include media-down(desktop) {
+    @content;
+  }
+}
+
+@mixin tablet-only {
+  @include media-up(tablet) {
+    @include media-down(desktop) {
+      @content;
+    }
+  }
+}
+
+@mixin mobile {
+  @include media-down(tablet) {
+    @content;
+  }
+}
+
+@mixin mobile-s {
+  @include media-down(mobile) {
+    @content;
+  }
+}
+
+// =============================================
+// 4. Ховер-эффекты с учетом тач-устройств
+// =============================================
+
+/// Ховер-эффекты с фолбэком на active для тач-устройств
+/// @param {Boolean} $active-fallback [true] - Добавлять ли active-эффект
+@mixin hover($active-fallback: true) {
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      @content;
+    }
+  }
+
+  @if $active-fallback {
+    @media (hover: none) and (pointer: coarse) {
+      &:active {
+        @content;
+      }
+    }
+  }
+}
+
+// =============================================
+// 5. Дополнительные утилиты
+// =============================================
+
+/// Ориентация устройства
+@mixin portrait {
+  @media (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin landscape {
+  @media (orientation: landscape) {
+    @content;
+  }
+}
+
+/// Плотность пикселей
+@mixin retina {
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    @content;
+  }
+}

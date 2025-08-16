@@ -1,0 +1,57 @@
+{
+  "name": "productly",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack serve  --mode development",
+    "prod": "webpack --mode production",
+    "lint:js": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:js:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "lint:css": "stylelint \"**/*.{css,scss,sass,less}\"",
+    "lint:css:fix": "stylelint \"**/*.{css,scss,sass,less}\" --fix",
+    "lint": "npm run lint:js && npm run lint:css",
+    "lint:fix": "npm run lint:js:fix && npm run lint:css:fix",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css,scss,sass,less,json,md}\"",
+    "precommit": "npm run lint && npm run format"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nekko-Byte/productly.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Nekko-Byte/productly/issues"
+  },
+  "homepage": "https://github.com/Nekko-Byte/productly#readme",
+  "devDependencies": {
+    "@babel/core": "^7.28.3",
+    "@babel/preset-env": "^7.28.3",
+    "@eslint/js": "^9.33.0",
+    "babel-loader": "^10.0.0",
+    "css-loader": "^7.1.2",
+    "eslint": "^9.33.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-webpack-plugin": "^5.0.2",
+    "globals": "^16.3.0",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.4",
+    "mini-css-extract-plugin": "^2.9.4",
+    "prettier": "^3.6.2",
+    "sass": "^1.90.0",
+    "sass-loader": "^16.0.5",
+    "style-loader": "^4.0.0",
+    "stylelint": "^16.23.1",
+    "stylelint-config-standard-scss": "^15.0.1",
+    "webpack": "^5.101.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
+  },
+  "dependencies": {
+    "modern-normalize": "^3.0.1"
+  }
+}

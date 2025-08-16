@@ -1,0 +1,59 @@
+:root {
+  // =============================================
+  // 1. Базовые цвета (цветовая палитра)
+  // =============================================
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-light: #F5F5F5;
+  --color-violet: #7752BE;
+  --color-yellow: #FAB005;
+  --color-red: #F03E3D;
+  --color-blue: #4DADF7;
+
+  // =============================================
+  // 2. Семантические цвета (основные/второстепенные)
+  // =============================================
+  --color-primary: #544837;
+  --color-primary-dark: #2F281E;
+  --color-primary-light: #FFB2A0;
+  --color-secondary: #FF7B5B;
+  --color-secondary-light: #FFC6B2;
+  --color-accent: #FF9900;
+
+  // =============================================
+  // 3. Цвета для конкретных компонентов
+  // =============================================
+  --color-link-navigation: var(--color-primary-dark);
+  --color-link-accent: var(--color-accent);
+  --color-title: var(--color-primary-dark);
+  --color-text: var(--color-primary);
+  --color-hover: var(--color-accent);
+
+  // =============================================
+  // 4. Размеры и отступы
+  // =============================================
+  --button-height: 53px;
+  --input-height: 45px;
+  --container-width: 1200px;
+  --container-padding-x: 20px;
+
+  // =============================================
+  // 5. Границы и скругления
+  // =============================================
+  --border-default: 1px solid #D7D7D7;
+  --border-additional: 1px solid #BCD0E5;
+  --border-radius-sm: 4px;
+  --border-radius-md: 19px;
+  --border-radius-lg: 90px;
+
+  // =============================================
+  // 6. Анимации
+  // =============================================
+  --transition-duration: 0.2s;
+
+  // =============================================
+  // 7. Шрифты
+  // =============================================
+  --font-family-base: "Open Sans", sans-serif;
+  --font-family-accent: "Poppins", sans-serif;
+}
