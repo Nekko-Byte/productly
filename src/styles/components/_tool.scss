@@ -1,0 +1,29 @@
+@use "../helpers/" as *;
+
+.tool {
+  &__image-wrapper {
+    @include square(50px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 30px 0;
+    border-radius: var(--border-radius-md);
+
+    &--violet {
+      background-color: var(--color-violet);
+    }
+
+    &--accent {
+      background-color: var(--color-accent);
+    }
+
+    &--red {
+      background-color: var(--color-red);
+    }
+
+    &--blue {
+      background-color: var(--color-blue);
+    }
+  }
+}

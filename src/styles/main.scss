@@ -16,9 +16,11 @@
 @use "./components/menu";
 @use "./components/button";
 @use "./components/link";
+@use "./components/tool";
 
 // =============================================
 // Layout
 // =============================================
 @use "./layout/header";
 @use "./layout/hero";
+@use "./layout/tools";

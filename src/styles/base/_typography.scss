@@ -1,7 +1,15 @@
 @use "../helpers/" as *;
 
-h1 {
+h1, .h1 {
   @include font(44px, 54px, 700);
 
   font-family: var(--font-family-accent);
+}
+
+h2, .h2 {
+  @include font(34px, 34px, 700);
+}
+
+h4, .h4 {
+  @include font(22px, 22px, 600)
 }
