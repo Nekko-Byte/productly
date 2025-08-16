@@ -61,26 +61,131 @@
     </div>
   </header>
   <main class="main">
-    <section class="hero">
+    <section class="hero" aria-labelledby="hero-title">
       <div class="hero__inner container">
       <div class="hero__body">
-        <h1 class="hero__title">The Design Thinking superpowers</h1>
+        <h1 class="hero__title" id="hero-title">The Design Thinking superpowers</h1>
         <div class="hero__description">
           <p>Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
         </div>
         <div class="hero__links">
           <a class="hero__link button button__accent" href="#">Get started</a>
-          <a class="hero__link link link__accent" href="">Watch the Video</a>
+          <a class="hero__link link link__accent" href="#">Watch the Video</a>
         </div>
       </div>
       <img
         class="hero__image-bg" 
         src="~@icons/hero-bg.svg" 
-        alt=""
+        alt="Decorative background image"
         width="643"
         height="495"
         loading="lazy"
+        aria-hidden="true"
       >
+      </div>
+    </section>
+    <section class="tools">
+      <div class="tools__inner container">
+        <h2 class="tools__title">We design tools to unveil your superpowers</h2>
+
+        <ul class="tools__list">
+          <li class="tools__item">
+            <div class="tool">
+              <div class="tool__image-wrapper tool__image-wrapper--violet">
+                <img
+                  class="tool__image" 
+                  src="~@icons/cursor.svg" 
+                  alt="Icon cursor"
+                  width="20"
+                  height="20"
+                  loading="lazy"
+                  role="presentation"
+                  aria-hidden="true"
+                >
+              </div>
+              <div class="tool__body">
+                <h3 class="tool__title">First click tests</h3>
+                <div class="tool__description">
+                  <p>While most people enjoy casino gambling,</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="tools__item">
+            <div class="tool">
+              <div class="tool__image-wrapper tool__image-wrapper--accent">
+                <img
+                  class="tool__image" 
+                  src="~@icons/snake.svg" 
+                  alt="Icon snake"
+                  width="20"
+                  height="20"
+                  loading="lazy"
+                  role="presentation"
+                  aria-hidden="true"
+                >
+              </div>
+              <div class="tool__body">
+                <h3 class="tool__title">Design surveys</h3>
+                <div class="tool__description">
+                  <p>Sports betting, lottery and bingo playing for the fun</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="tools__item">
+            <div class="tool">
+              <div class="tool__image-wrapper tool__image-wrapper--red">
+                <img
+                  class="tool__image" 
+                  src="~@icons/like.svg" 
+                  alt="Icon like"
+                  width="20"
+                  height="20"
+                  loading="lazy"
+                  role="presentation"
+                  aria-hidden="true"
+                >
+              </div>
+              <div class="tool__body">
+                <h3 class="tool__title">Preference tests</h3>
+                <div class="tool__description">
+                  <p>The Myspace page defines the individual.</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="tools__item">
+            <div class="tool">
+              <div class="tool__image-wrapper tool__image-wrapper--blue">
+                <img
+                  class="tool__image" 
+                  src="~@icons/time.svg" 
+                  alt="Icon time"
+                  width="20"
+                  height="20"
+                  loading="lazy"
+                  role="presentation"
+                  aria-hidden="true"
+                >
+              </div>
+              <div class="tool__body">
+                <h3 class="tool__title">Five second tests</h3>
+                <div class="tool__description">
+                  <p>Personal choices and the overall personality of the person. </p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <button 
+          class="tools__button button button__accent"
+          type="button"
+          aria-label="Sign Up for tools access"
+        >
+          Sign Up now
+        </button>
       </div>
     </section>
   </main>
