@@ -10,6 +10,10 @@ h2, .h2 {
   @include font(34px, 34px, 700);
 }
 
+h3, .h3 {
+  @include font(24px, 34px, 700)
+}
+
 h4, .h4 {
   @include font(22px, 22px, 600)
 }

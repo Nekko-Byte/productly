@@ -1,0 +1,41 @@
+@use "../helpers/" as *;
+
+.strategies {
+  padding: 30px 0 0 0;
+
+  &__content {
+    &:not(.is-active) {
+      display: none;
+    }
+  }
+
+  &__title {
+    margin: 0 0 14px 0;
+  }
+
+  &__subtitle {
+    margin: 0 0 24px 0;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 34px;
+  }
+
+  &__item {
+    &:nth-child(5n -1) {
+      grid-column: 1 / 3;
+    }
+  }
+
+  &__link {
+    @include hover {
+      color: var(--color-accent);
+
+      .card {
+        box-shadow: none;
+      }
+    }
+  }
+}

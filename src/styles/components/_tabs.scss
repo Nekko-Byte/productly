@@ -1,0 +1,34 @@
+@use "../helpers/" as *;
+
+.tabs {
+  margin: 0 0 31px 0;
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+  }
+
+  &__button {
+    @include font(13px, 28px, 400);
+
+    padding: 0 14px;
+    color: var(--color-primary);
+    border: 1px solid #d7d7d7;
+    border-radius: var(--border-radius-lg);
+    transition-duration: var(--transition-duration);
+
+    &.is-active {
+      border-color: var(--color-accent);
+      background-color: var(--color-accent);
+      color: var(--color-white);
+      pointer-events: none;
+    }
+
+    @include hover {
+      border-color: var(--color-hover);
+      background-color: var(--color-hover);
+      color: var(--color-white);
+    }
+  }
+}
