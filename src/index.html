@@ -3,9 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Productly</title>
 </head>
 <body>
-  <h1>Hello world!</h1>
+  <header class="header">
+    <div class="header__inner container">
+      <a 
+        class="header__logo logo" 
+        href="#" 
+        aria-current="page"
+      >
+        <img 
+          class="logo__image"
+          src="~@icons/logo.svg" 
+          alt="Logo company Productly"
+          width="147" 
+          height="29"
+          loading="lazy"
+        >
+      </a>
+
+      <nav 
+        class="header__menu menu" 
+        aria-label="Main navigation"
+      >
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#">Home</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Services</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">About</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Product</a>
+          </li>
+        </ul>
+
+        <div class="header__buttons">
+          <button 
+            class="header__button button button--bordered"
+            type="button" 
+            aria-label="Sign In"
+          >
+            Sign In
+          </button>
+          <button 
+            class="header__button button button--accent"
+            type="button" 
+            aria-label="Sign Up"
+          >
+            Sign Up
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
 </body>
 </html>
